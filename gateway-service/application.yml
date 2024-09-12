@@ -11,6 +11,21 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+      routes:
+        - id: test-service
+          uri: lb://eureka-client-service
+          predicates:
+            - Path=/test/**
+          filters:
+            - AuthenticationFilter
+
+        - id: authentication-service
+          uri: lb://authentication-service
+          predicates:
+            - Path=/authentication/**
+          filters:
+            - AuthenticationFilter
+
 
 
 eureka:
