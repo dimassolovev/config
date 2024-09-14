@@ -28,3 +28,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:${DISCOVERY_SERVICE_PORT}/eureka
+
+authentication:
+  base-url: http://localhost:${API_GATEWAY_PORT}/authentication
+  token-endpoint: /token
+  validate-token-endpoint: /validate-token
+  register-endpoint: /register
