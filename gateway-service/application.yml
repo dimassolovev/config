@@ -24,6 +24,14 @@ spring:
           predicates:
             - Path=/authentication/**
 
+        - id: stock-data-aggregator-service
+          uri: lb://stock-data-aggregator-service
+          predicates:
+            - Path=/quote/**
+          filters:
+            - AuthenticationFilter
+
+
 eureka:
   client:
     service-url:
