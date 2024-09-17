@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: stock-data-aggregator
+    name: stock-data-aggregator-service
 
 eureka:
   client:
