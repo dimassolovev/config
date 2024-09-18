@@ -27,7 +27,7 @@ spring:
         - id: stock-data-aggregator-service
           uri: lb://stock-data-aggregator-service
           predicates:
-            - Path=/quote/**
+            - Path=/quotation/**
           filters:
             - AuthenticationFilter
 
