@@ -22,7 +22,7 @@ spring:
         - id: authentication-service
           uri: lb://authentication-service
           predicates:
-            - Path=/authentication/**
+            - Path=/v1/authentication/**
 
 #        - id: stock-data-aggregator-service
 #          uri: lb://stock-data-aggregator-service
