@@ -24,6 +24,12 @@ spring:
           predicates:
             - Path=/v1/authentication/**
 
+        - id: moex-data-service
+          uri: lb://moex-data-service
+          predicates:
+            - Path=/v1/currencies/**
+
+
 #        - id: stock-data-aggregator-service
 #          uri: lb://stock-data-aggregator-service
 #          predicates:
