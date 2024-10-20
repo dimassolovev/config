@@ -5,8 +5,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:${DISCOVERY_SERVICE_PORT}/eureka
-  instance:
-    instance-id: ${random.uuid}
 
 spring:
   application:
