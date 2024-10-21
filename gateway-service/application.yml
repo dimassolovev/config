@@ -30,7 +30,7 @@ spring:
             - AuthenticationFilter
 
 authentication:
-  base-url: http://localhost:${API_GATEWAY_PORT}/authentication
+  base-url: http://localhost:${API_GATEWAY_PORT}/v1/authentication
   token-endpoint: /token
   validate-token-endpoint: /validate-token
   register-endpoint: /register
