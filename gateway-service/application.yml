@@ -26,14 +26,8 @@ spring:
           uri: lb://moex-data-service
           predicates:
             - Path=/v1/currencies/**
-
-
-#        - id: stock-data-aggregator-service
-#          uri: lb://stock-data-aggregator-service
-#          predicates:
-#            - Path=/quotation/**
-#          filters:
-#            - AuthenticationFilter
+          filters:
+            - AuthenticationFilter
 
 authentication:
   base-url: http://localhost:${API_GATEWAY_PORT}/authentication
