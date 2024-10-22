@@ -53,6 +53,10 @@ spring:
 kafka:
   topic: quotation.moex-data.currencies
 
+redis:
+  host: ${REDIS_HOST}
+  port: ${REDIS_PORT}
+
 other:
   currency:
     related_path: v1/currencies/
