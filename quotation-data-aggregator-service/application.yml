@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:${DISCOVERY_SERVICE_PORT}/eureka
+      defaultZone: ${DISCOVERY_URL}
   instance:
     instance-id: ${random.uuid}
 
@@ -13,7 +13,7 @@ spring:
     name: quotation-data-aggregator-service
 
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: ${kafka:29092}
 
   cloud:
     openfeign:
