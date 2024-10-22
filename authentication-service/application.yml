@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:${DISCOVERY_SERVICE_PORT}/eureka
+      defaultZone: ${DISCOVERY_URL}
   instance:
     instance-id: ${random.uuid}
 
