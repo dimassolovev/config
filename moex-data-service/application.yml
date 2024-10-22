@@ -19,7 +19,7 @@ spring:
       cache-null-values: false
 
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: ${BOOTSTRAP_SERVERS}
     consumer:
       group-id: moex-data.currencies-1
 
