@@ -13,7 +13,7 @@ spring:
     name: quotation-data-aggregator-service
 
   kafka:
-    bootstrap-servers: ${kafka:29092}
+    bootstrap-servers: ${BOOTSTRAP_SERVERS}
 
   cloud:
     openfeign:
