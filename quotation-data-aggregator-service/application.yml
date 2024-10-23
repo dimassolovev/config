@@ -22,6 +22,16 @@ spring:
           moex-client:
             url: https://iss.moex.com
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus, health
+  metrics:
+    distribution:
+      percentiles-histogram:
+        "[http.server.requests]": true
+
 kafka:
   retention: 14
   topic: "quotation.moex-data.currencies"

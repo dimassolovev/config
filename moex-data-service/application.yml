@@ -50,6 +50,16 @@ spring:
           batch_size: 45
         order_updates: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus, health
+  metrics:
+    distribution:
+      percentiles-histogram:
+        "[http.server.requests]": true
+
 kafka:
   topic: quotation.moex-data.currencies
 
