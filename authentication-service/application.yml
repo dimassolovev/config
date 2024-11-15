@@ -24,6 +24,7 @@ spring:
     user: ${spring.datasource.username}
     password: ${spring.datasource.password}
     enabled: true
+    default-schema: auth_schema
 
   jpa:
     hibernate:
