@@ -68,6 +68,7 @@ kafka:
 scheduler:
   currency-moex-client:
     cron-expression: "0 0 18 * * SUN" # "* * * * * ?"
+    outbox-cron-expression: "0 0 * * * ?"
     limit: 100
     securities:
       - "TRY"
